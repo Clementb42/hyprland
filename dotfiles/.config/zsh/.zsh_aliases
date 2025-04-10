@@ -1,0 +1,91 @@
+# -- ALIAS --
+
+# ---------------------------
+# -- BUILT-IN --
+# ---------------------------
+
+alias ..='cd ..'
+alias ls='eza --icons --color=always'
+alias ll='eza -l --icons --group --color=always'
+alias la='eza -la --icons --group --color=always'
+alias du='duf'
+alias cat='bat --theme Nord'
+alias vi='nvim'
+alias vim='nvim'
+alias top='btop'
+alias grep='grep --color=auto'
+alias tp='trashy put'
+alias diff='colordiff'
+
+# ---------------------------
+# -- KITTY --
+# ---------------------------
+
+alias icat='kitty +kitten icat'
+alias sshk='kitty +kitten ssh'
+
+# ---------------------------
+# -- DOTFILES --
+# ---------------------------
+
+alias zshconfig='vim ~/dotfiles/zsh/.zshrc'
+alias starshipconfig='vim ~/dotfiles/starship/starship.toml'
+alias picomconfig='vim ~/dotfiles/picom/picom.conf'
+alias polybarconfig='vim ~/dotfiles/polybar/config.ini'
+alias kittyconfig='vim ~/dotfiles/kitty/kitty.conf'
+alias zshcolors='vim ~/dotfiles/zsh/.zsh_colors'
+alias aliases='vim ~/dotfiles/zsh/.zsh_aliases'
+alias dotfiles='cd ~/dotfiles/'
+
+# ---------------------------
+# -- PACKAGES --
+# ---------------------------
+
+alias pacmanupdate='trizen -Syu'
+alias pacmandump='pacman -Qq > ~/dotfiles/packages.list'
+alias pacmanremove='pacman -Rs'
+
+# ---------------------------
+# -- KUBERNETES --
+# ---------------------------
+
+alias kga='kubectl get all -n'
+alias kctx='kubectx'
+alias kns='kubens'
+alias k='kubectl'
+alias logsk8s='python /usr/local/bin/infra-tool-winry/main.py'
+alias kgp='kubectl get pods'
+alias kgs='kubectl get service'
+
+# ---------------------------
+# -- HELM --
+# ---------------------------
+
+alias hla='helm list --all-namespaces'
+alias hrl='helm repo list'
+
+# ---------------------------
+# -- GIT --
+# ---------------------------
+
+alias gs='git status -s'
+
+# ---------------------------
+# -- ARSENAL --
+# ---------------------------
+
+alias a='arsenal'
+
+
+# ---------------------------
+# -- UTILS --
+# ---------------------------
+
+alias buds='galaxybudsclient' 
+
+
+# ---------------------------
+# -- TERRAFORM --
+# ---------------------------
+
+alias tf='terraform'
