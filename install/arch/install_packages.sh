@@ -43,7 +43,6 @@ installer_packages=(
     "helm"
     "aws-cli"
     "bitwarden"
-
     
 )
 
@@ -55,6 +54,7 @@ installer_yay=(
     "helmfile"
     "hyprshot"
     "galaxybudsclient-bin"
+    "anytype-bin"
 )
 
 # PLEASE NOTE: Add more packages at the end of the following command
