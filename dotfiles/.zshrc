@@ -1,29 +1,19 @@
-#    _               _              
-#   | |__   __ _ ___| |__  _ __ ___ 
-#   | '_ \ / _` / __| '_ \| '__/ __|
-#  _| |_) | (_| \__ \ | | | | | (__ 
-# (_)_.__/ \__,_|___/_| |_|_|  \___|
-# 
-
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-PS1='[\u@\h \W]\$ '
-
+#  ________      ________       ___  ___      ________      ________     
+# |\_____  \    |\   ____\     |\  \|\  \    |\   __  \    |\   ____\    
+#  \|___/  /|   \ \  \___|_    \ \  \\\  \   \ \  \|\  \   \ \  \___|    
+#      /  / /    \ \_____  \    \ \   __  \   \ \   _  _\   \ \  \       
+#     /  /_/__    \|____|\  \    \ \  \ \  \   \ \  \\  \|   \ \  \____  
+#    |\________\    ____\_\  \    \ \__\ \__\   \ \__\\ _\    \ \_______\
+#     \|_______|   |\_________\    \|__|\|__|    \|__|\|__|    \|_______|
+#                  \|_________|                                          
+#
+# ---------------------------------------------------
+# LOAD CUSTOM ZSH Files if directory exist
 # -----------------------------------------------------
-# LOAD CUSTOM .bashrc_custom if exists
-# -----------------------------------------------------
-if [ -f ~/.bashrc_custom ] ;then
-    source ~/.bashrc_custom
-fi
-
-# -----------------------------------------------------
-# Fastfetch if in Hyprland
-# -----------------------------------------------------
-if [[ $(tty) == *"pts"* ]]; then
-    fastfetch
+if [ -d $HOME/.config/zsh ] ;then
+    source $HOME/.config/zsh/.zshrc
 else
-    echo
-    echo "Start Hyprland with command Hyprland"
+    echo "Directory zsh not found in $HOME/.config"
 fi
 
 alias ml4w-hyprland='~/.config/ml4w/apps/ML4W_Hyprland_Settings-x86_64.AppImage'
