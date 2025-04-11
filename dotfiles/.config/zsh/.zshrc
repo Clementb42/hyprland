@@ -39,10 +39,10 @@ function mkcd () {
 # -- PLUGINS && FILES --
 # ---------------------------
 
-source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh_colors
-source ~/.zsh_aliases
+source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.config/zsh/.zsh_colors
+source ~/.config/zsh/.zsh_aliases
 
 # ---------------------------
 # -- FUZZY FINDER --
