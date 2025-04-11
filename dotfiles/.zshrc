@@ -16,4 +16,4 @@ else
     echo "Directory zsh not found in $HOME/.config"
 fi
 
-alias ml4w-hyprland='~/.config/ml4w/apps/ML4W_Hyprland_Settings-x86_64.AppImage'
+# alias ml4w-hyprland='~/.config/ml4w/apps/ML4W_Hyprland_Settings-x86_64.AppImage'

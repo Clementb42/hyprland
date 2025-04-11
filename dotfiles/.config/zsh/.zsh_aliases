@@ -53,7 +53,6 @@ alias kga='kubectl get all -n'
 alias kctx='kubectx'
 alias kns='kubens'
 alias k='kubectl'
-alias logsk8s='python /usr/local/bin/infra-tool-winry/main.py'
 alias kgp='kubectl get pods'
 alias kgs='kubectl get service'
 
@@ -76,16 +75,17 @@ alias gs='git status -s'
 
 alias a='arsenal'
 
-
 # ---------------------------
 # -- UTILS --
 # ---------------------------
 
 alias buds='galaxybudsclient' 
 
-
 # ---------------------------
 # -- TERRAFORM --
 # ---------------------------
 
 alias tf='terraform'
+
+
+# alias ml4w-hyprland='~/.config/ml4w/apps/ML4W_Hyprland_Settings-x86_64.AppImage'
