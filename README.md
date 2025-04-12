@@ -1,4 +1,4 @@
-This repo is a fork from ML4W Hyprland Starter 1.0.1, i've modified some things here and there to suits my personal preferences and own needs.
+This repo is a fork from ML4W Hyprland Starter 1.0.1, i've modified some things here and there to suits my personal preferences and needs.
 
 ## Documentation (Wiki)
 
@@ -7,7 +7,7 @@ You can find the complete documentation of the ML4W Dotfiles in the Wiki. <b>[Op
 ## Installation
 
 ```
-bash <(curl -s https://raw.githubusercontent.com/clementb42/hyprland/main/setup.sh)
+bash <(curl -s https://raw.githubusercontent.com/mylinuxforwork/hyprland-starter/main/setup.sh)
 ```
 ## Packages
 
@@ -19,10 +19,12 @@ The script will install the following packages and the corresponding configurati
 - Browser: zen-browser 
 - Terminal: kitty 
 - Notification Service: dunst 
-- File Manager: Nautilus
+- Notification Center : swaync
+- File Manager: nautilus
 - xdg-desktop-portal-hyprland 
 - qt5-wayland 
 - qt6-wayland 
 - Lock screen: hyprlock
+- Screenshots : hyprshot
 
 

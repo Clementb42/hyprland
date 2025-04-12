@@ -14,6 +14,9 @@ installer_packages=(
     "qt6-wayland"
     "hyprpaper"
     "hyprlock"
+    "hypridle"
+    "noto-fonts"
+    "libnotify"
     "ttf-font-awesome"
     "vim"
     "ttf-fira-sans" 
@@ -34,8 +37,12 @@ installer_packages=(
     "fzf"
     "zsh"
     "starship"
+    "swaync"
+    "zsh-autosuggestions"
+    "zsh-syntax-highlighting"
     "discord"
     "fd"
+# DevOps tools
     "kubectl"
     "kubectx"
     "kubens"
@@ -43,18 +50,18 @@ installer_packages=(
     "helm"
     "aws-cli"
     "bitwarden"
-    
 )
 
 installer_yay=(
     "wlogout" 
     "zen-browser-bin"
     "spotify"
-    "swaync"
     "helmfile"
     "hyprshot"
     "galaxybudsclient-bin"
     "anytype-bin"
+    "bibata-cursor-theme-bin"
+    "nautilus-open-any-terminal"
 )
 
 # PLEASE NOTE: Add more packages at the end of the following command
