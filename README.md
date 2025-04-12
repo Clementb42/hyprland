@@ -21,10 +21,11 @@ The script will install the following packages and the corresponding configurati
 - Notification Service: dunst 
 - Notification Center : swaync
 - File Manager: nautilus
-- xdg-desktop-portal-hyprland 
+- xdg-desktop-portal-hyprland
+- prompt : starship
 - qt5-wayland 
 - qt6-wayland 
 - Lock screen: hyprlock
 - Screenshots : hyprshot
-
+- DevOps Tools  
 
