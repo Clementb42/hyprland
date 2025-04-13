@@ -83,6 +83,11 @@ source install/includes/kvm.sh
 source install/includes/copy.sh
 
 # ----------------------------------------------------- 
+# Shell Setup
+# ----------------------------------------------------- 
+source install/includes/zsh.sh
+
+# ----------------------------------------------------- 
 # Reboot
 # ----------------------------------------------------- 
 source install/includes/reboot.sh

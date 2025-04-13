@@ -48,9 +48,17 @@ source $HOME/.config/zsh/.zsh_aliases
 # -- FUZZY FINDER --
 # ---------------------------
 
+# Color Scheme daemon theme
+
 export FZF_DEFAULT_OPTS='--color=fg:#ebfafa,hl:#f8bfed --color=fg+:#ebfafa,hl+:#ff5edf --color=info:#5fa9f4,prompt:#5fa9f4,pointer:#5fa9f4 --color=marker:#7081d0,spinner:#f7c67f,header:#323449 --border="rounded" --reverse'
+
+# Color schema samurai theme
+
+#export FZF_DEFAULT_OPTS='--color=fg:#ebfafa,bg:#09090d,hl:#c7ffd8 --color=fg+:#ebfafa,bg+:#222326,hl+:#37f499 --color=info:#5fa9f4,prompt:#5fa9f4,pointer:#5fa9f4 --color=marker:#7081d0,spinner:#f7c67f,header:#323449 --border="rounded"'
+
 export FZF_ALT_C_COMMAND="fd -t d . $HOME"
 source <(fzf --zsh)
+
 
 # ---------------------------
 # -- STARSHIP -- 
