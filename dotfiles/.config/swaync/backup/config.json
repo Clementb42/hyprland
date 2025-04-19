@@ -63,8 +63,8 @@
         "buttons-grid": {
             "actions": [
                 {
-                    "label": "",
-                    "command": "hyprlock"
+                    "label": "",
+                    "command": "nmtui"
                 },
                 {
                     "label": "󰝟",

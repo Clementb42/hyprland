@@ -1,30 +1,6 @@
 /* Colors */
 
-/* @import '../../.cache/wal/colors-waybar.css';  */
-
-@define-color foreground #dbcbde;
-@define-color background #090f19;
-@define-color cursor #dbcbde;
-
-@define-color color0 #090f19;
-@define-color color1 #F95B8D;
-@define-color color2 #F46EA3;
-@define-color color3 #30AAED;
-@define-color color4 #5BA2EE;
-@define-color color5 #4AB5E2;
-@define-color color6 #4CDFFA;
-@define-color color7 #dbcbde;
-@define-color color8 #998e9b;
-@define-color color9 #F95B8D;
-@define-color color10 #F46EA3;
-@define-color color11 #30AAED;
-@define-color color12 #5BA2EE;
-@define-color color13 #4AB5E2;
-@define-color color14 #4CDFFA;
-@define-color color15 #dbcbde;
-
-
-/* default colors */
+/* @import '../../.cache/wal/colors-waybar.css'; */
 @define-color background #242424;
 @define-color groupbackground #363636;
 @define-color buttoncolor #4a4a4a;
@@ -69,3 +45,4 @@ button {
     color: #ffffff;
     background: transparent;
 }
+W
