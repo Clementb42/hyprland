@@ -53,7 +53,6 @@ installer_packages=(
     "k9s"
     "helm"
     "aws-cli"
-
 )
 
 installer_yay=(
@@ -67,6 +66,7 @@ installer_yay=(
     "anytype-bin"
     "bibata-cursor-theme-bin"
     "nautilus-open-any-terminal"
+    "arsenal"
 )
 
 # PLEASE NOTE: Add more packages at the end of the following command

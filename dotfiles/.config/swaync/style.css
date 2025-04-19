@@ -1,5 +1,6 @@
 /* Colors */
 
+/* @import '../../.cache/wal/colors-waybar.css'; */
 @define-color background #242424;
 @define-color groupbackground #363636;
 @define-color buttoncolor #4a4a4a;
@@ -44,3 +45,4 @@ button {
     color: #ffffff;
     background: transparent;
 }
+W

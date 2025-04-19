@@ -30,6 +30,7 @@
     "script-fail-notify": true,
     "widgets": [
         "dnd",
+        "buttons-grid",
         "mpris",
         "volume",
         "backlight",
@@ -58,6 +59,26 @@
         },
         "backlight": {
             "label": "󰃟"
+        },
+        "buttons-grid": {
+            "actions": [
+                {
+                    "label": "",
+                    "command": "nmtui"
+                },
+                {
+                    "label": "󰝟",
+                    "command": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+                },
+                {
+                    "label": "󰂯",
+                    "command": "blueman-manager"
+                },
+                {
+                    "label": "",
+                    "command": "bash -c $HOME/config/hypr/scripts/wlogout.sh"
+                }
+            ]
         }
     }
 }
