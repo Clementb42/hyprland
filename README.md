@@ -7,7 +7,7 @@ You can find the complete documentation of the ML4W Dotfiles in the Wiki. <b>[Op
 ## Installation
 
 ```
-bash <(curl -s https://raw.githubusercontent.com/mylinuxforwork/hyprland-starter/main/setup.sh)
+bash <(curl -s https://raw.githubusercontent.com/Equinox42/hyprland/main/setup.sh)
 ```
 ## Packages
 
