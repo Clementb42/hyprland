@@ -67,8 +67,8 @@
                     "command": "bash -c waypaper &"
                 },
                 {
-                    "label": "󰝟",
-                    "command": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+                    "label": "",
+                    "command": "flatpak run com.ml4w.hyprlandsettings"
                 },
                 {
                     "label": "󰂯",
