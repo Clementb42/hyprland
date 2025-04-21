@@ -83,9 +83,14 @@ source install/includes/kvm.sh
 source install/includes/copy.sh
 
 # ----------------------------------------------------- 
-# Shell Setup
+# ZSH setup
 # ----------------------------------------------------- 
 source install/includes/zsh.sh
+
+# ----------------------------------------------------- 
+# Download ml4w hyprland settings app
+# ----------------------------------------------------- 
+source install/includes/ml4w-download-app.sh
 
 # ----------------------------------------------------- 
 # Reboot
