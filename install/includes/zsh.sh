@@ -1,3 +1,7 @@
 #!/bin/bash
-echo "changing shell for current user to zsh"
-chsh -s "$(which zsh)" "$USER"
+
+while ! chsh -s $(which zsh); do
+    echo "ERROR: Authentication failed. Please enter the correct password."
+    sleep 1
+done
+echo ":: Shell is now zsh."
