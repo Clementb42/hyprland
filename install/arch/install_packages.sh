@@ -53,6 +53,7 @@ installer_packages=(
     "zsh-syntax-highlighting"
     "discord"
     "fd"
+    "gnome-keyring"
     "bitwarden"
 # DevOps tools
     "kubectl"
@@ -75,6 +76,7 @@ installer_yay=(
     "bibata-cursor-theme-bin"
     "nautilus-open-any-terminal"
     "arsenal"
+    "matugen-bin"
 )
 
 # PLEASE NOTE: Add more packages at the end of the following command
