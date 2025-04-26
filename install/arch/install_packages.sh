@@ -42,6 +42,7 @@ installer_packages=(
     "bluez-utils"
     "pavucontrol"
     "kitty"
+    "flatpak"
     "bat"
     "eza"
     "fzf"
