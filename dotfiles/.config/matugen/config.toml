@@ -1,0 +1,18 @@
+[config]
+
+[templates.hyprland]
+input_path = '~/.config/matugen/templates/hyprland-colors.conf'
+output_path = '~/.config/hypr/hyprlock/colors.conf'
+
+[templates.waybar]
+input_path = '~/.config/matugen/templates/matugen-waybar.css'
+output_path = '~/.config/waybar/matugen/matugen-waybar.css'
+post_hook = 'pkill -SIGUSR2 waybar'
+
+[templates.swaync]
+input_path = '~/.config/matugen/templates/matugen-swaync.css'
+output_path = '~/.config/swaync/matugen/matugen-swaync.css'
+
+[templates.wlogout]
+input_path = '~/.config/matugen/templates/matugen-wlogout.css'
+output_path = '~/.config/wlogout/matugen/matugen-wlogout.css'

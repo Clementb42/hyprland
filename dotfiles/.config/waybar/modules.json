@@ -11,17 +11,17 @@
     "on-scroll-up": "hyprctl dispatch workspace r-1",
     "on-scroll-down": "hyprctl dispatch workspace r+1",
     "on-click": "activate",
-    "active-only": true,
-    "all-outputs": false,
+    "active-only": "true",
+    "all-outputs": "false",
     "format": "{}",
     "format-icons": {
       "urgent": "",
       "active": "",
       "default": ""
     },
-    "persistent-workspaces": {
-            "*": 9
-    }
+    // "persistent-workspaces": {
+    //         "*": 9
+    // }
   },
 
   // Empty
@@ -116,7 +116,7 @@
 
   // Clock
   "clock": {
-    "format": "{:%H:%M %a}",
+    "format": "{:%H:%M}",
     "on-click": "flatpak run com.ml4w.calendar",
     "timezone": "",
     "tooltip": false
