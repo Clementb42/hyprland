@@ -27,6 +27,7 @@ installer_packages=(
     "ttf-fira-code" 
     "ttf-firacode-nerd"
     "ttf-jetbrains-mono"
+    "noto-fonts-emoji"
     "fuse2"
     "gtk4"
     "libadwaita"

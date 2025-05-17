@@ -28,33 +28,44 @@ alias sshk='kitty +kitten ssh'
 # -- DOTFILES --
 # ---------------------------
 
-alias zshconfig='vim ~/dotfiles/zsh/.zshrc'
-alias starshipconfig='vim ~/dotfiles/starship/starship.toml'
-alias picomconfig='vim ~/dotfiles/picom/picom.conf'
-alias polybarconfig='vim ~/dotfiles/polybar/config.ini'
+alias zshconfig='vim ~/.config/zsh/.zshrc'
+alias starshipconfig='vim ~/.config/starship.toml'
 alias kittyconfig='vim ~/dotfiles/kitty/kitty.conf'
-alias zshcolors='vim ~/dotfiles/zsh/.zsh_colors'
-alias aliases='vim ~/dotfiles/zsh/.zsh_aliases'
+alias zshcolors='vim ~/.config/zsh/.zsh_colors'
+alias aliases='vim ~/.config/zsh/.zsh_aliases'
 alias dotfiles='cd ~/dotfiles/'
 
 # ---------------------------
 # -- PACKAGES --
 # ---------------------------
 
-alias pacmanupdate='trizen -Syu'
-alias pacmandump='pacman -Qq > ~/dotfiles/packages.list'
+alias pacmanupdate='yay -Syu'
+alias pacmandump='pacman -Qq > ~/.config/packages.list'
 alias pacmanremove='pacman -Rs'
+
+# ---------------------------
+# -- AWS --
+# ---------------------------
+
+function awsp() {
+  local profile
+  profile=$(sed -n 's/^\[profile \(.*\)\]/\1/p' ~/.aws/config | fzf)
+  if [[ -n "$profile" ]]; then
+    export AWS_PROFILE="$profile"
+    echo "Switched to AWS_PROFILE=$AWS_PROFILE"
+  fi
+}
 
 # ---------------------------
 # -- KUBERNETES --
 # ---------------------------
 
-alias kga='kubectl get all -n'
-alias kctx='kubectx'
-alias kns='kubens'
 alias k='kubectl'
+alias kga='kubectl get all -n'
 alias kgp='kubectl get pods'
 alias kgs='kubectl get service'
+alias kctx='kubectx'
+alias kns='kubens'
 
 # ---------------------------
 # -- HELM --
