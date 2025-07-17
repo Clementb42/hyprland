@@ -67,6 +67,27 @@ alias kgs='kubectl get service'
 alias kctx='kubectx'
 alias kns='kubens'
 
+# convertit la variable d'environnement $NS en flag de namespace si cette variable existe (utilisé dans les fonctions suivantes)
+function ns_flag {
+    local ns_flag="-n $NS"
+    if [ -n "$NS" ]; then echo "$ns_flag"; fi
+}
+
+# créer un secret k8s depuis un fichier d'environnement
+function kmakesec {
+    k create secret generic $1 --from-env-file $2 $(ns_flag) --dry-run=client -o yaml
+}
+
+# récupère un secret k8s au format json et base64-décodé
+function kgetsec {
+    local get_secret="k get secrets $1 $(ns_flag) -o json | jq '(.data[] |= @base64d).data'"
+    if [ -n "$2" ]; then
+        eval "$get_secret" | jq -r ".[\"$2\"]"
+    else
+        eval "$get_secret -C"
+    fi
+}
+
 # ---------------------------
 # -- HELM --
 # ---------------------------
@@ -79,6 +100,8 @@ alias hrl='helm repo list'
 # ---------------------------
 
 alias gs='git status -s'
+alias gsi='git switch $(git branch | fzf)'
+alias glog='log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short'
 
 # ---------------------------
 # -- ARSENAL --
@@ -99,4 +122,8 @@ alias buds='galaxybudsclient'
 alias tf='terraform'
 
 
-# alias ml4w-hyprland='~/.config/ml4w/apps/ML4W_Hyprland_Settings-x86_64.AppImage'
+# ---------------------------
+# -- OTHER --
+# ---------------------------
+
+alias vpnup='wg-quick up wg0'

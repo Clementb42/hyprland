@@ -25,7 +25,7 @@
  @define-color textcolor1 @on_surface;
  @define-color textcolor2 @color11;
  @define-color textcolor3 @on_surface;
- @define-color iconcolor @color11;
+ @define-color iconcolor @on_surface;
  
  
  /* -----------------------------------------------------
